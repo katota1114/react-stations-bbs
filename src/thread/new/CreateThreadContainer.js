@@ -3,10 +3,18 @@ import { Link, useNavigate } from "react-router-dom";
 
 function CreateThreadContainer() {
   const [threadTitle, setThreadTitle] = useState("");
+  const [isFetching, setIsFetching] = useState(false);
   const navigate = useNavigate();
 
   function handleClickSubmitButton() {
+    if (isFetching) {
+      // 連打しているので2回目のリクエストを無視する
+      return;
+    }
+    setIsFetching(true);
     if (threadTitle === "") {
+      alert("スレッドタイトルを入力してください");
+      setIsFetching(false);
       return;
     }
     const body = { title: threadTitle };
@@ -16,6 +24,7 @@ function CreateThreadContainer() {
       body: JSON.stringify(body),
     })
       .then((response) => {
+        setIsFetching(false);
         if (!response.ok) {
           throw new Error(response);
         }
