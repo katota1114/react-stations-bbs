@@ -42,6 +42,7 @@ header {
 }
 
 .create-thread-link {
+  color: #ffffff !important;
   text-decoration: underline;
   padding: 20px;
 }
