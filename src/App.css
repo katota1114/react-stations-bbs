@@ -84,12 +84,17 @@ input.thread-title-input {
 }
 
 .action-buttons button {
+  cursor: pointer;
   border: none;
   border-radius: 5px;
   color: #ffffff;
   font-size: larger;
   background-color: #65d28a;
   padding: 5px 30px;
+}
+
+.action-buttons button:hover {
+  background-color: #90e5ac;
 }
 
 @keyframes App-logo-spin {
