@@ -5,7 +5,7 @@ import CreateThreadScreen from "./thread/new/CreateThreadScreen";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path={"/"} element={<ThreadsListScreen />} />
         <Route path={"/thread/new"} element={<CreateThreadScreen />} />
