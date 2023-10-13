@@ -20,7 +20,7 @@ function ThreadsListContainer() {
   }, []);
 
   const threadItems = threadsList.map((item) => (
-    <ThreadItem title={item.title} />
+    <ThreadItem title={item.title} id={item.id} />
   ));
 
   return (
