@@ -28,6 +28,43 @@
   color: #61dafb;
 }
 
+header {
+  color: #ffffff;
+  background-color: #65d28a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: x-large;
+  padding: 20px;
+}
+
+.create-thread-link {
+  text-decoration: underline;
+  padding: 20px;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+.container {
+  padding: 50px;
+  height: auto;
+}
+
+.thread {
+  border: #000000 1px solid;
+  background-color: #ffffff;
+  padding: 5px 20px;
+}
+
+.thread-title {
+  font-size: large;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
