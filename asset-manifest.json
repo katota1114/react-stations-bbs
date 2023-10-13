@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-stations-bbs/static/css/main.c981b359.css",
+    "main.css": "/react-stations-bbs/static/css/main.86a78f8c.css",
     "main.js": "/react-stations-bbs/static/js/main.99aa2dbe.js",
     "static/js/787.042ac77d.chunk.js": "/react-stations-bbs/static/js/787.042ac77d.chunk.js",
     "index.html": "/react-stations-bbs/index.html",
-    "main.c981b359.css.map": "/react-stations-bbs/static/css/main.c981b359.css.map",
+    "main.86a78f8c.css.map": "/react-stations-bbs/static/css/main.86a78f8c.css.map",
     "main.99aa2dbe.js.map": "/react-stations-bbs/static/js/main.99aa2dbe.js.map",
     "787.042ac77d.chunk.js.map": "/react-stations-bbs/static/js/787.042ac77d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c981b359.css",
+    "static/css/main.86a78f8c.css",
     "static/js/main.99aa2dbe.js"
   ]
 }
