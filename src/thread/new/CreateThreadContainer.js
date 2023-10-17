@@ -6,7 +6,8 @@ function CreateThreadContainer() {
   const [isFetching, setIsFetching] = useState(false);
   const navigate = useNavigate();
 
-  function handleClickSubmitButton() {
+  function handleClickSubmitButton(event) {
+    event.preventDefault(); //デフォルトのリロードが走らないように
     if (isFetching) {
       // 連打しているので2回目のリクエストを無視する
       return;
@@ -39,7 +40,8 @@ function CreateThreadContainer() {
   return (
     <div className="container">
       <h1>スレッド新規作成</h1>
-      <input
+      <form onSubmit={handleClickSubmitButton}>
+        <input
         name="thread-title"
         type="text"
         className="thread-title-input"
@@ -50,8 +52,9 @@ function CreateThreadContainer() {
       ></input>
       <div className="action-buttons">
         <Link to={"/"}>Topに戻る</Link>
-        <button onClick={handleClickSubmitButton}>作成</button>
+        <button type="submit">作成</button>
       </div>
+      </form>
     </div>
   );
 }
